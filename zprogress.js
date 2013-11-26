@@ -41,7 +41,7 @@
       init()
       clear()
       value = LMARGIN
-      $wrapper.animate({ opacity: 1 })
+      $wrapper.css({ opacity: 1 })
       $indicator.animate({ translateX: '0%' }, 0)
       setTimeout(function(){
         anim()
@@ -64,7 +64,10 @@
       clear()
       value = 1
       anim()
-      setTimeout(function(){$wrapper.animate({ opacity: 0 })}, 100)
+
+      setTimeout(function(){
+        $wrapper.animate({ opacity: 0 })
+      }, 500)
     },
     color: function(color){
       init()
