@@ -13,7 +13,7 @@
     RMARGIN = 1 - LMARGIN
 
   function init(){
-    if($wrapper) return
+    if($wrapper && $wrapper.length) return
 
     $('body').append(html)
     $wrapper = $('#zprogress')
